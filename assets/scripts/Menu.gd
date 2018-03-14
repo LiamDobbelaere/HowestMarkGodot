@@ -17,13 +17,16 @@ func _ready():
 	pass
 
 func redraw_menu():
-	set_bbcode("[color=%s]Howest[/color][color=%s]mark[/color] Godot\n" % [COLOR_BLUE, COLOR_PINK]);
+	var bbcode = "[color=%s]Howest[/color][color=%s]mark[/color] Godot\n" % [COLOR_BLUE, COLOR_PINK];
+	bbcode += "----------------\n";
 
 	for i in range(0, len(OPTIONS)):
 		if i == index:
-			set_bbcode(get_bbcode() + "[color=%s]> %s[/color]\n" % [COLOR_YELLOW, OPTIONS[i]]);
+			bbcode += "[color=%s] %s[/color]\n" % [COLOR_YELLOW, OPTIONS[i]];
 		else:
-			set_bbcode(get_bbcode() + "  %s\n" % [OPTIONS[i]]);
+			bbcode += "%s\n" % [OPTIONS[i]];
+		
+	set_bbcode(bbcode);
 		
 func _process(delta):
 	if Input.is_action_just_pressed("ui_down"):
