@@ -11,12 +11,16 @@ config_version=3
 [application]
 
 config/name="HowestMarkGodot"
-run/main_scene="res://assets/scenes/BallMark.tscn"
+run/main_scene="res://assets/scenes/Menu.tscn"
 config/icon="res://icon.png"
 
-[debug]
+[display]
 
-settings/fps/force_fps=60
+window/vsync/use_vsync=false
+
+[physics]
+
+common/enable_object_picking=false
 
 [rendering]
 

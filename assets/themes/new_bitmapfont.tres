@@ -1,0 +1,17 @@
+[gd_resource type="BitmapFont" load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = ""
+
+[resource]
+
+textures = [  ]
+chars = PoolIntArray(  )
+kernings = PoolIntArray(  )
+height = 1.0
+ascent = 0.0
+distance_field = false
+script = SubResource( 1 )
+_sections_unfolded = [ "Resource" ]
+

@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/scripts/Menu.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+
+font_path = "res://assets/fonts/joystix monospace.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 24
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Root" type="Node" index="0"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Anchor", "Margin", "Theme" ]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = ""
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+script = ExtResource( 1 )
+_sections_unfolded = [ "Anchor", "BBCode", "Grow Direction", "Margin", "custom_colors", "custom_fonts" ]
+
+
