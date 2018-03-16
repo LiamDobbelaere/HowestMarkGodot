@@ -14,10 +14,6 @@ config/name="HowestMarkGodot"
 run/main_scene="res://assets/scenes/Menu.tscn"
 config/icon="res://icon.png"
 
-[display]
-
-window/vsync/use_vsync=false
-
 [physics]
 
 common/enable_object_picking=false

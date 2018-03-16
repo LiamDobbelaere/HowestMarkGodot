@@ -36,7 +36,7 @@ __meta__ = {
 
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Region", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 

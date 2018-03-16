@@ -7,9 +7,10 @@ extends RichTextLabel
 const COLOR_PINK = "#ec008c"
 const COLOR_YELLOW = "#fff200";
 const COLOR_BLUE = "#44c8f4";
-const OPTIONS = ["First option", "Second option", "toby", "hallo", "test"];
+const OPTIONS = ["[Physics]", "BallMark", "BallMark3D", "[Rendering]", "Stress2D"];
+const UNTOUCHABLE = [0, 3];
 
-var index = 0;
+var index = 1;
 
 func _ready():
 	redraw_menu();
@@ -24,8 +25,11 @@ func redraw_menu():
 		if i == index:
 			bbcode += "[color=%s] %s[/color]\n" % [COLOR_YELLOW, OPTIONS[i]];
 		else:
-			bbcode += "%s\n" % [OPTIONS[i]];
-		
+			if i in UNTOUCHABLE:
+				bbcode += "[color=%s]%s[/color]\n" % [COLOR_BLUE, OPTIONS[i]];
+			else:
+				bbcode += "%s\n" % [OPTIONS[i]];	
+			
 	set_bbcode(bbcode);
 		
 func _process(delta):
@@ -33,13 +37,20 @@ func _process(delta):
 		index += 1;
 		if index >= len(OPTIONS):
 			index = 0;
+		if index in UNTOUCHABLE:
+			index += 1
 		redraw_menu();
 	
 	if Input.is_action_just_pressed("ui_up"):
 		index -= 1;
+		if index in UNTOUCHABLE:
+			index -= 1
 		if index < 0:
 			index = len(OPTIONS) - 1;
 		redraw_menu();
+		
+	if Input.is_action_just_pressed("ui_accept"):
+		get_tree().change_scene("res://assets/scenes/%s.tscn" % [OPTIONS[index]])
 	
 	pass
 
