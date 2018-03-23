@@ -10,7 +10,7 @@ source_file="res://assets/textures/sticker.png"
 source_md5="d2a51b5d9d2509bfaca6de4625a7c97b"
 
 dest_files=[ "res://.import/sticker.png-40d62fcd6330234dd5e7b284ccba24a3.stex" ]
-dest_md5="313e1c9d01405ac84a3bfda61bdb193f"
+dest_md5="7687f30391ee8716f2dd1bf18698128c"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

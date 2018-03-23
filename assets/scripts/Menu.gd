@@ -8,11 +8,21 @@ const COLOR_PINK = "#ec008c"
 const COLOR_YELLOW = "#fff200";
 const COLOR_BLUE = "#44c8f4";
 const OPTIONS = ["[Physics]", "BallMark", "BallMark3D", "[Rendering]", "Stress2D"];
-const UNTOUCHABLE = [0, 3];
+var UNTOUCHABLE = [];
 
-var index = 1;
+var index = -1;
 
 func _ready():
+	for arg in OS.get_cmdline_args():
+		if arg.substr(0, 6) == "-test=":
+			var test = arg.split('=')[1];
+			get_tree().change_scene("res://assets/scenes/%s.tscn" % [test])
+			
+	for x in range(0, len(OPTIONS)):
+		if OPTIONS[x].substr(0, 1) == "[":
+			UNTOUCHABLE.append(x);
+	
+	menu_select_next();
 	redraw_menu();
 
 	pass
@@ -31,22 +41,30 @@ func redraw_menu():
 				bbcode += "%s\n" % [OPTIONS[i]];	
 			
 	set_bbcode(bbcode);
+
+func menu_select_next():
+	index += 1;
+	if index >= len(OPTIONS):
+			index = 0;
+	
+	if index in UNTOUCHABLE:
+		menu_select_next();	
+
+func menu_select_previous():
+	index -= 1;
+	if index < 0:
+		index = len(OPTIONS) - 1;
+	
+	if index in UNTOUCHABLE:
+		menu_select_previous();	
 		
 func _process(delta):
 	if Input.is_action_just_pressed("ui_down"):
-		index += 1;
-		if index >= len(OPTIONS):
-			index = 0;
-		if index in UNTOUCHABLE:
-			index += 1
+		menu_select_next();
 		redraw_menu();
-	
+		
 	if Input.is_action_just_pressed("ui_up"):
-		index -= 1;
-		if index in UNTOUCHABLE:
-			index -= 1
-		if index < 0:
-			index = len(OPTIONS) - 1;
+		menu_select_previous();
 		redraw_menu();
 		
 	if Input.is_action_just_pressed("ui_accept"):

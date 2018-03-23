@@ -168,7 +168,7 @@ adjustment_contrast = 1.0
 adjustment_saturation = 1.0
 _sections_unfolded = [ "Adjustments", "Background", "Fog", "SSAO" ]
 
-[node name="Node" type="Spatial"]
+[node name="Node" type="Spatial" index="0"]
 
 [node name="StaticBody5" type="StaticBody" parent="." index="0"]
 

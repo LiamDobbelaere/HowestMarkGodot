@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wall.png-35b80c25b8f7299ed1631f28676b0e6a.stex"
+path="res://.import/howest.png-c5a918d12dc37eccb62dfea6b7932005.stex"
 
 [deps]
 
-source_file="res://assets/textures/wall.png"
-source_md5="551b29a33becb5fdbf70f07be3852ca3"
+source_file="res://assets/textures/howest.png"
+source_md5="f7ca2b86237be167dd548fc9f54e5807"
 
-dest_files=[ "res://.import/wall.png-35b80c25b8f7299ed1631f28676b0e6a.stex" ]
-dest_md5="80daedee70c46c954814c70ba02883c1"
+dest_files=[ "res://.import/howest.png-c5a918d12dc37eccb62dfea6b7932005.stex" ]
+dest_md5="3b9191d04c2e77e230adab939fbe050f"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
