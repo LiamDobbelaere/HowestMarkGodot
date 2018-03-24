@@ -12,7 +12,7 @@ func _ready():
 func _process(delta):
 	var fps = 1 / delta;
 	
-	print("%s, %s" % [count,  fps])
+	print("bench %s, %s\r" % [count,  fps])
 		
 	for i in range(0, 25):
 		var s = stamp.instance();

@@ -11,7 +11,7 @@ func _ready():
 func _process(delta):
 	var fps = 1 / delta;
 	
-	print("%s, %s" % [count,  fps])
+	print("bench %s, %s\r" % [count,  fps])
 
 	for i in range(0, 2):	
 		var b = ball.instance()
