@@ -7,7 +7,7 @@ extends RichTextLabel
 const COLOR_PINK = "#ec008c"
 const COLOR_YELLOW = "#fff200";
 const COLOR_BLUE = "#44c8f4";
-const OPTIONS = ["[Physics]", "BallMark", "BallMark3D", "[Rendering]", "Stress2D"];
+const OPTIONS = ["[Physics 2D]", "BallMark", "BoxMark", "PolyMark", "[Physics 3D]", "BallMark3D", "BoxMark3D", "[Rendering]", "Stress2D"];
 var UNTOUCHABLE = [];
 
 var index = -1;
