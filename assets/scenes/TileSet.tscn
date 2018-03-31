@@ -6,30 +6,10 @@
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-self_modulate = Color( 0.643137, 0.466667, 0.0980392, 1 )
+show_behind_parent = true
 texture = ExtResource( 1 )
 centered = false
-region_enabled = true
 region_rect = Rect2( 0, 0, 8, 8 )
-_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
-
-[node name="Sprite2" type="Sprite" parent="." index="1"]
-
-self_modulate = Color( 0.643137, 0.466667, 0.0980392, 1 )
-position = Vector2( 8, 0 )
-texture = ExtResource( 1 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 8, 8 )
-_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
-
-[node name="Sprite3" type="Sprite" parent="Sprite2" index="0"]
-
-self_modulate = Color( 0.54902, 0.643137, 0.0941176, 1 )
-texture = ExtResource( 1 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 16, 8, 8 )
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
 
 

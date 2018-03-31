@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/sphere_standard.obj-6770ac3a576097e466cec13c1ad0ef75.mesh"
+
+[deps]
+
+files=[ "res://.import/sphere_standard.obj-6770ac3a576097e466cec13c1ad0ef75.mesh" ]
+
+source_file="res://assets/models/sphere_standard.obj"
+dest_files=[ "res://.import/sphere_standard.obj-6770ac3a576097e466cec13c1ad0ef75.mesh", "res://.import/sphere_standard.obj-6770ac3a576097e466cec13c1ad0ef75.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
