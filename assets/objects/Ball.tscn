@@ -5,9 +5,9 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 8.0
+radius = 6.0
 
-[node name="Ball" type="RigidBody2D"]
+[node name="Ball" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -27,14 +27,14 @@ linear_velocity = Vector2( 0, 0 )
 linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Angular", "Linear", "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.370069, 0.370069 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Region", "Transform" ]
 

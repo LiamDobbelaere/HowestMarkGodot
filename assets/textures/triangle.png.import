@@ -7,10 +7,7 @@ path="res://.import/triangle.png-22ef22adb6fd5335527d58df07526a5c.stex"
 [deps]
 
 source_file="res://assets/textures/triangle.png"
-source_md5="e631d87e2a315279cc5962c8e8c3adc1"
-
 dest_files=[ "res://.import/triangle.png-22ef22adb6fd5335527d58df07526a5c.stex" ]
-dest_md5="0474167ee173d7f3665b115910d7ccc2"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/box.png-524d77bf62562293051b5286e829832a.stex"
 [deps]
 
 source_file="res://assets/textures/box.png"
-source_md5="7f7e12091eb0479582930ea0b3f712c8"
-
 dest_files=[ "res://.import/box.png-524d77bf62562293051b5286e829832a.stex" ]
-dest_md5="c44aa5d961da2a6bb611030c43e144a8"
 
 [params]
 

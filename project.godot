@@ -14,6 +14,12 @@ config/name="HowestMarkGodot"
 run/main_scene="res://assets/scenes/Menu.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/height=768
+window/size/resizable=false
+window/dpi/allow_hidpi=true
+
 [physics]
 
 common/enable_object_picking=false

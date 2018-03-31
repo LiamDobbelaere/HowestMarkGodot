@@ -7,10 +7,7 @@ path="res://.import/howest.png-c5a918d12dc37eccb62dfea6b7932005.stex"
 [deps]
 
 source_file="res://assets/textures/howest.png"
-source_md5="f7ca2b86237be167dd548fc9f54e5807"
-
 dest_files=[ "res://.import/howest.png-c5a918d12dc37eccb62dfea6b7932005.stex" ]
-dest_md5="3b9191d04c2e77e230adab939fbe050f"
 
 [params]
 

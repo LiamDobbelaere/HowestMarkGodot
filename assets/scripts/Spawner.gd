@@ -1,7 +1,7 @@
 extends Node2D
 
 export(PackedScene) var ball
-var force = 64
+var force = 1
 var count = 0
 var conditionCount = 0
 

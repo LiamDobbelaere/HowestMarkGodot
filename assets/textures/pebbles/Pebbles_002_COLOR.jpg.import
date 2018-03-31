@@ -8,10 +8,7 @@ path.etc2="res://.import/Pebbles_002_COLOR.jpg-15a7f11db29554fd2db59159a51720fb.
 [deps]
 
 source_file="res://assets/textures/pebbles/Pebbles_002_COLOR.jpg"
-source_md5="b12daee8fdd26d0d42c278b72113c3b1"
-
 dest_files=[ "res://.import/Pebbles_002_COLOR.jpg-15a7f11db29554fd2db59159a51720fb.s3tc.stex", "res://.import/Pebbles_002_COLOR.jpg-15a7f11db29554fd2db59159a51720fb.etc2.stex" ]
-dest_md5="a85f9a821d6933ad8272ee2d10500991"
 
 [params]
 

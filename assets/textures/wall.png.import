@@ -7,10 +7,7 @@ path="res://.import/wall.png-35b80c25b8f7299ed1631f28676b0e6a.stex"
 [deps]
 
 source_file="res://assets/textures/wall.png"
-source_md5="551b29a33becb5fdbf70f07be3852ca3"
-
 dest_files=[ "res://.import/wall.png-35b80c25b8f7299ed1631f28676b0e6a.stex" ]
-dest_md5="80daedee70c46c954814c70ba02883c1"
 
 [params]
 

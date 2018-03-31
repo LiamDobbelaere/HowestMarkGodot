@@ -9,12 +9,12 @@
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
-[node name="World" type="Node"]
+[node name="World" type="Node" index="0"]
 
 [node name="Wall" type="StaticBody2D" parent="." index="0"]
 
-position = Vector2( -16.8307, 328.183 )
-scale = Vector2( 1, 21.7478 )
+position = Vector2( -15.213, 372.705 )
+scale = Vector2( 1, 41.7614 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -37,8 +37,8 @@ shape = SubResource( 1 )
 
 [node name="Wall2" type="StaticBody2D" parent="." index="1"]
 
-position = Vector2( 1040.3, 319.686 )
-scale = Vector2( 1, 21.7478 )
+position = Vector2( 1040.3, 425.854 )
+scale = Vector2( 1, 35.554 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -61,7 +61,7 @@ shape = SubResource( 1 )
 
 [node name="Wall3" type="StaticBody2D" parent="." index="2"]
 
-position = Vector2( 522.255, 585.37 )
+position = Vector2( 514.922, 754.357 )
 scale = Vector2( 32.7972, 1 )
 input_pickable = false
 collision_layer = 1

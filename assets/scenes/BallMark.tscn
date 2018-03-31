@@ -13,8 +13,8 @@ extents = Vector2( 16, 16 )
 
 [node name="Wall" type="StaticBody2D" parent="." index="0"]
 
-position = Vector2( -16.8307, 328.183 )
-scale = Vector2( 1, 21.7478 )
+position = Vector2( -16.8307, 279.728 )
+scale = Vector2( 1, 39.5632 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -37,8 +37,8 @@ shape = SubResource( 1 )
 
 [node name="Wall2" type="StaticBody2D" parent="." index="1"]
 
-position = Vector2( 1040.3, 319.686 )
-scale = Vector2( 1, 21.7478 )
+position = Vector2( 1040.3, 313.379 )
+scale = Vector2( 1, 40.7348 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -61,7 +61,7 @@ shape = SubResource( 1 )
 
 [node name="Wall3" type="StaticBody2D" parent="." index="2"]
 
-position = Vector2( 522.255, 585.37 )
+position = Vector2( 511.912, 756.141 )
 scale = Vector2( 32.7972, 1 )
 input_pickable = false
 collision_layer = 1
