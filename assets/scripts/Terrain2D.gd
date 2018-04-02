@@ -128,6 +128,13 @@ func spawn_terrain():
 		while y < height:
 			var tile = tile_data[x][y]
 			
+			var up_tile = y > 0 && tile_data[x][y - 1] > 0;
+			var down_tile = y < height - 1 && tile_data[x][y + 1] > 0;
+			var left_tile = x > 0 && tile_data[x - 1][y] > 0;
+			var right_tile = x < width - 1 && tile_data[x][y + 1] > 0; 
+			
+			
+				
 			if tile_data[x][y] > 0:
 				set_cell(x, y, 0);
 			y += 1;

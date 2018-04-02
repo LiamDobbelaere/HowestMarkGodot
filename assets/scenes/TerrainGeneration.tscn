@@ -8,7 +8,7 @@
 
 [node name="Camera2D" type="Camera2D" parent="." index="0"]
 
-position = Vector2( -7.47986, -2.10223 )
+position = Vector2( 276.847, 1815.53 )
 anchor_mode = 0
 rotating = false
 current = true

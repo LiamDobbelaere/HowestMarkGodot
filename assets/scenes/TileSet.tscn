@@ -9,7 +9,88 @@
 show_behind_parent = true
 texture = ExtResource( 1 )
 centered = false
+region_enabled = true
 region_rect = Rect2( 0, 0, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+show_behind_parent = true
+position = Vector2( 8, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 8, 0, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite3" type="Sprite" parent="." index="2"]
+
+show_behind_parent = true
+position = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 0, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite4" type="Sprite" parent="." index="3"]
+
+show_behind_parent = true
+position = Vector2( 0, 8 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 8, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite5" type="Sprite" parent="." index="4"]
+
+show_behind_parent = true
+position = Vector2( 8, 8 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 8, 8, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite6" type="Sprite" parent="." index="5"]
+
+show_behind_parent = true
+position = Vector2( 16, 8 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 8, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite7" type="Sprite" parent="." index="6"]
+
+show_behind_parent = true
+position = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 16, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite8" type="Sprite" parent="." index="7"]
+
+show_behind_parent = true
+position = Vector2( 8, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 8, 16, 8, 8 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
+
+[node name="Sprite9" type="Sprite" parent="." index="8"]
+
+show_behind_parent = true
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 16, 8, 8 )
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility", "Z Index" ]
 
 
