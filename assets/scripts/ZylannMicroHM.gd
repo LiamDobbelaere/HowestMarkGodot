@@ -25,22 +25,22 @@ func _empty_void_function():
 # } Stuff used in tests
 
 func _ready():
-	var vtest_while_loop = 0;
-	var vtest_empty_func = 0;
-	var vtest_increment = 0;
-	var vtest_increment_x5 = 0;
-	var vtest_increment_with_member_var = 0;
-	var vtest_increment_with_local_outside_loop = 0;
-	var vtest_increment_with_local_inside_loop = 0;
-	var vtest_increment_vector2 = 0;
-	var vtest_increment_vector3 = 0;
-	var vtest_increment_vector3_constant = 0;
-	var vtest_increment_vector3_individual_xyz = 0;
-	var vtest_unused_local = 0;
-	var vtest_divide = 0;
-	var vtest_increment_with_array_member = 0;
-	var vtest_if_true = 0;
-	var vtest_if_true_else = 0;
+	var vtest_while_loop = 0.0;
+	var vtest_empty_func = 0.0;
+	var vtest_increment = 0.0;
+	var vtest_increment_x5 = 0.0;
+	var vtest_increment_with_member_var = 0.0;
+	var vtest_increment_with_local_outside_loop = 0.0;
+	var vtest_increment_with_local_inside_loop = 0.0;
+	var vtest_increment_vector2 = 0.0;
+	var vtest_increment_vector3 = 0.0;
+	var vtest_increment_vector3_constant = 0.0;
+	var vtest_increment_vector3_individual_xyz = 0.0;
+	var vtest_unused_local = 0.0;
+	var vtest_divide = 0.0;
+	var vtest_increment_with_array_member = 0.0;
+	var vtest_if_true = 0.0;
+	var vtest_if_true_else = 0.0;
 	
 	var avg_count = 0;
 	while avg_count < AVG_TIMES:
