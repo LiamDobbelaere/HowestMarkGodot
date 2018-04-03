@@ -7,16 +7,11 @@ extends RichTextLabel
 const COLOR_PINK = "#ec008c"
 const COLOR_YELLOW = "#fff200";
 const COLOR_BLUE = "#44c8f4";
-const OPTIONS = ["[Physics 2D]", "BallMark", "BoxMark", "PolyMark", "[Physics 3D]", "BallMark3D", "BoxMark3D", "[Rendering]", "Stress2D", "Stress3D", "Stress3DUnlit"];
+const OPTIONS = ["[Physics 2D]", "BallMark", "BoxMark", "PolyMark", "[Physics 3D]", "BallMark3D", "BoxMark3D", "[Rendering]", "Stress2D", "Stress3D", "Stress3DUnlit", "[Logic]", "ZylannMicroHM"];
 var UNTOUCHABLE = [];
-var stopwatch = load('res://assets/scripts/Chronometer.gd').new();
 var index = -1;
 
 func _ready():
-	stopwatch.start();
-	OS.delay_usec(1000000);
-	print(stopwatch.stop());
-		
 	for arg in OS.get_cmdline_args():
 		if arg.substr(0, 6) == "-test=":
 			var test = arg.split('=')[1];
