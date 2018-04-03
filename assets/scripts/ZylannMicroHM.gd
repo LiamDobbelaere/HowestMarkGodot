@@ -11,7 +11,7 @@ extends Node2D
 # executed 10 times, because there is too big of a difference without
 # taking the average of multiple runs.
 
-const ITERATIONS = 2000000
+const ITERATIONS = 500000
 const AVG_TIMES = 10.0
 
 var chronometer = load('res://assets/scripts/Chronometer.gd').new();

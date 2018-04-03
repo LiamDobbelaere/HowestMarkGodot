@@ -1,0 +1,6 @@
+D:\GitHub\HowestMarkGodot\.mono\temp\bin\Release\HowestMarkGodot.dll
+D:\GitHub\HowestMarkGodot\.mono\temp\bin\Release\HowestMarkGodot.pdb
+D:\GitHub\HowestMarkGodot\.mono\temp\obj\Release\HowestMarkGodot.csprojResolveAssemblyReference.cache
+D:\GitHub\HowestMarkGodot\.mono\temp\obj\Release\HowestMarkGodot.csproj.CoreCompileInputs.cache
+D:\GitHub\HowestMarkGodot\.mono\temp\obj\Release\HowestMarkGodot.dll
+D:\GitHub\HowestMarkGodot\.mono\temp\obj\Release\HowestMarkGodot.pdb
