@@ -36,7 +36,7 @@ _sections_unfolded = [ "Directional Shadow", "Light" ]
 
 [node name="Camera" type="Camera" parent="." index="1"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.0343 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.49531 )
 keep_aspect = 1
 cull_mask = 1048575
 environment = ExtResource( 1 )
@@ -49,10 +49,12 @@ fov = 70.0
 size = 1.0
 near = 0.05
 far = 100.0
+_sections_unfolded = [ "Transform" ]
 
 [node name="Stamper" type="Spatial" parent="." index="2"]
 
 script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 stamp = ExtResource( 3 )
 
 
