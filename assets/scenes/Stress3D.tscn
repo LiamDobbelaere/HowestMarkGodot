@@ -11,7 +11,7 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.3601 )
 layers = 1
 light_color = Color( 1, 1, 1, 1 )
-light_energy = 8.0
+light_energy = 1.0
 light_indirect_energy = 1.0
 light_negative = false
 light_specular = 0.5
@@ -36,7 +36,6 @@ _sections_unfolded = [ "Directional Shadow", "Light" ]
 
 [node name="Camera" type="Camera" parent="." index="1"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.49531 )
 keep_aspect = 1
 cull_mask = 1048575
 environment = ExtResource( 1 )

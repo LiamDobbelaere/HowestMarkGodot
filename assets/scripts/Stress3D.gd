@@ -3,10 +3,10 @@ extends Spatial
 export(PackedScene) var stamp;
 var count = 0;
 var conditionCount = 0
-var distance = 50.0;
+var distance = 18.0;
 var camera;
-var frustrum_height;
-var frustrum_width;
+var frustum_height;
+var frustum_width;
 
 func _ready():
 	camera = get_parent().get_node("Camera");
@@ -14,8 +14,8 @@ func _ready():
 	# Initialization here
 	
 	var aspect = get_viewport().size.x / get_viewport().size.y;
-	frustrum_height = 2.0 * -distance * tan(deg2rad(camera.fov * 0.5));
-	frustrum_width = frustrum_height * aspect;
+	frustum_height = 2.0 * -distance * tan(deg2rad(camera.fov * 0.5));
+	frustum_width = frustum_height * aspect;
 	
 	pass
 
@@ -29,13 +29,11 @@ func _process(delta):
 		
 		add_child(s);
 		
-		var rand_width = rand_range(-frustrum_width/2, frustrum_width/2);
-		var rand_height = rand_range(-frustrum_height/2, frustrum_height/2) 
+		var rand_width = rand_range(-frustum_width/2, frustum_width/2);
+		var rand_height = rand_range(-frustum_height/2, frustum_height/2) 
 		
 		s.set_translation(Vector3(rand_width, rand_height, -distance))
 		
-		#s.translate(Vector3(screen_pos.x, screen_pos.y, 0) - Vector3(get_viewport().size.x / 2, get_viewport().size.y / 2, 0));	
-		#s.translate(Vector3(rand_range(-extents, extents), rand_range(-extents, extents), rand_range(-extents, extents)));
 		count += 1;
 
 	if (fps < 60.0): conditionCount+=1
