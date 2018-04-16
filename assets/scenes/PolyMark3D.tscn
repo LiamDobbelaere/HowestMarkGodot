@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/scripts/Spawner3D.gd" type="Script" id=1]
-[ext_resource path="res://assets/objects/Ball3D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/Poly3D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/objects/Physics3DWorld.tscn" type="PackedScene" id=3]
 
 [node name="Node" type="Spatial" index="0"]
@@ -15,6 +15,6 @@ ball = ExtResource( 2 )
 
 [node name="Physics3DWorld" parent="." index="1" instance=ExtResource( 3 )]
 
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 

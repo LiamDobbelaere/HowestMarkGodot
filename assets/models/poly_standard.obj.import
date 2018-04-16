@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/poly_standard.obj-2b470c7099bc429f876c77c84f16b1b7.mesh"
+
+[deps]
+
+files=[ "res://.import/poly_standard.obj-2b470c7099bc429f876c77c84f16b1b7.mesh" ]
+
+source_file="res://assets/models/poly_standard.obj"
+dest_files=[ "res://.import/poly_standard.obj-2b470c7099bc429f876c77c84f16b1b7.mesh", "res://.import/poly_standard.obj-2b470c7099bc429f876c77c84f16b1b7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
