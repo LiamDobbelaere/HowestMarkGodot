@@ -5,6 +5,8 @@
 [ext_resource path="res://assets/textures/stress3d/Alien_flesh_002_OCC.jpg" type="Texture" id=3]
 [ext_resource path="res://assets/textures/stress3d/Alien_flesh_002_NRM.jpg" type="Texture" id=4]
 
+
+
 [sub_resource type="SpatialMaterial" id=1]
 
 render_priority = 0

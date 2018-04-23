@@ -1,0 +1,476 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/environments/BallMark3D.tres" type="Environment" id=1]
+[ext_resource path="res://assets/objects/Ball3D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/materials/wall.tres" type="Material" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 1, 1, 1 )
+
+[sub_resource type="Environment" id=2]
+
+background_mode = 1
+background_sky_custom_fov = 0.0
+background_color = Color( 0, 0, 0, 1 )
+background_energy = 1.0
+background_canvas_max_layer = 0
+ambient_light_color = Color( 0, 0, 0, 1 )
+ambient_light_energy = 1.0
+ambient_light_sky_contribution = 1.0
+fog_enabled = false
+fog_color = Color( 0.5, 0.6, 0.7, 1 )
+fog_sun_color = Color( 1, 0.9, 0.7, 1 )
+fog_sun_amount = 0.0
+fog_depth_enabled = true
+fog_depth_begin = 10.0
+fog_depth_curve = 1.0
+fog_transmit_enabled = false
+fog_transmit_curve = 1.0
+fog_height_enabled = false
+fog_height_min = 0.0
+fog_height_max = 100.0
+fog_height_curve = 1.0
+tonemap_mode = 0
+tonemap_exposure = 1.0
+tonemap_white = 1.0
+auto_exposure_enabled = false
+auto_exposure_scale = 0.4
+auto_exposure_min_luma = 0.05
+auto_exposure_max_luma = 8.0
+auto_exposure_speed = 0.5
+ss_reflections_enabled = false
+ss_reflections_max_steps = 64
+ss_reflections_fade_in = 0.15
+ss_reflections_fade_out = 2.0
+ss_reflections_depth_tolerance = 0.2
+ss_reflections_roughness = true
+ssao_enabled = false
+ssao_radius = 1.0
+ssao_intensity = 1.0
+ssao_radius2 = 0.0
+ssao_intensity2 = 1.0
+ssao_bias = 0.01
+ssao_light_affect = 0.0
+ssao_color = Color( 0, 0, 0, 1 )
+ssao_quality = 0
+ssao_blur = 3
+ssao_edge_sharpness = 4.0
+dof_blur_far_enabled = false
+dof_blur_far_distance = 10.0
+dof_blur_far_transition = 5.0
+dof_blur_far_amount = 0.1
+dof_blur_far_quality = 1
+dof_blur_near_enabled = false
+dof_blur_near_distance = 2.0
+dof_blur_near_transition = 1.0
+dof_blur_near_amount = 0.1
+dof_blur_near_quality = 1
+glow_enabled = false
+glow_levels/1 = false
+glow_levels/2 = false
+glow_levels/3 = true
+glow_levels/4 = false
+glow_levels/5 = true
+glow_levels/6 = false
+glow_levels/7 = false
+glow_intensity = 0.8
+glow_strength = 1.0
+glow_bloom = 0.0
+glow_blend_mode = 2
+glow_hdr_threshold = 1.0
+glow_hdr_scale = 2.0
+glow_bicubic_upscale = false
+adjustment_enabled = false
+adjustment_brightness = 1.0
+adjustment_contrast = 1.0
+adjustment_saturation = 1.0
+_sections_unfolded = [ "Background" ]
+
+[sub_resource type="CubeMesh" id=3]
+
+size = Vector3( 2, 2, 2 )
+subdivide_width = 0
+subdivide_height = 0
+subdivide_depth = 0
+
+[node name="Physics3DWorld" type="Spatial" index="0"]
+
+[node name="StaticBody" type="StaticBody" parent="." index="0"]
+
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="StaticBody6" type="StaticBody" parent="." index="1"]
+
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 28.0023, 0 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody6" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17849, 0 )
+shape = SubResource( 1 )
+disabled = false
+
+[node name="StaticBody2" type="StaticBody" parent="." index="2"]
+
+transform = Transform( 10, 0, 0, 0, -4.37114e-08, -15, 0, 1, -6.55671e-07, 0, 13.9878, -9.0097 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody2" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 1.13687e-13, 0, 4.44089e-16, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+disabled = false
+
+[node name="StaticBody4" type="StaticBody" parent="." index="3"]
+
+transform = Transform( -4.37114e-07, -1, 6.55671e-07, 0, -4.37114e-08, -15, 10, -4.37114e-08, 2.86603e-14, 8.99393, 13.9878, -0.0157791 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody4" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="StaticBody3" type="StaticBody" parent="." index="4"]
+
+transform = Transform( 10, 0, 0, 0, -4.37114e-08, -15, 0, 1, -6.55671e-07, 0, 13.9878, 8.97815 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody3" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="StaticBody5" type="StaticBody" parent="." index="5"]
+
+transform = Transform( -4.37114e-07, -1, 6.55671e-07, 0, -4.37114e-08, -15, 10, -4.37114e-08, 2.86603e-14, -8.99393, 13.9878, -0.0157799 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody5" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="Camera" type="Camera" parent="." index="6"]
+
+transform = Transform( -4.37114e-07, 0, -10, 0, 1, 0, 10, 0, -4.37114e-07, -30, 15, 0 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = ExtResource( 1 )
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = true
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="7"]
+
+environment = SubResource( 2 )
+
+[node name="Ball3D" type="RigidBody" parent="." index="8" instance=ExtResource( 2 )]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = false
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+axis_lock_linear_x = false
+axis_lock_linear_y = false
+axis_lock_linear_z = false
+axis_lock_angular_x = false
+axis_lock_angular_y = false
+axis_lock_angular_z = false
+linear_velocity = Vector3( 0, 0, 0 )
+linear_damp = -1.0
+angular_velocity = Vector3( 0, 0, 0 )
+angular_damp = -1.0
+_sections_unfolded = [ "Axis Lock", "Collision", "Transform" ]
+
+[node name="Ball3D24" parent="." index="9" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 10.2914, -10.1477 )
+
+[node name="Ball3D11" parent="." index="10" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.13525 )
+
+[node name="Ball3D41" parent="." index="11" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 18.4267, -10.1477 )
+
+[node name="Ball3D18" parent="." index="12" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.1522 )
+
+[node name="Ball3D39" parent="." index="13" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 20.4436, -10.1477 )
+
+[node name="Ball3D5" parent="." index="14" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.06112 )
+
+[node name="Ball3D23" parent="." index="15" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 6.23031, -10.1477 )
+
+[node name="Ball3D52" parent="." index="16" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 27.7388, -10.1477 )
+
+[node name="Ball3D10" parent="." index="17" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.07413 )
+
+[node name="Ball3D40" parent="." index="18" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 14.3656, -10.1477 )
+
+[node name="Ball3D3" parent="." index="19" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.02094 )
+
+[node name="Ball3D25" parent="." index="20" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 8.27049, -10.1477 )
+
+[node name="Ball3D12" parent="." index="21" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.11431 )
+
+[node name="Ball3D30" parent="." index="22" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 16.4057, -10.1477 )
+
+[node name="Ball3D6" parent="." index="23" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.08205 )
+
+[node name="Ball3D22" parent="." index="24" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 4.20938, -10.1477 )
+
+[node name="Ball3D51" parent="." index="25" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 25.7179, -10.1477 )
+
+[node name="Ball3D19" parent="." index="26" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.14245 )
+
+[node name="Ball3D34" parent="." index="27" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 2.14898, -10.1477 )
+
+[node name="Ball3D63" parent="." index="28" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 23.6575, -10.1477 )
+
+[node name="Ball3D9" parent="." index="29" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.0532 )
+
+[node name="Ball3D29" parent="." index="30" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 12.3446, -10.1477 )
+
+[node name="Ball3D2" parent="." index="31" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.01323 )
+
+[node name="Ball3D26" parent="." index="32" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 9.2782, -10.1477 )
+
+[node name="Ball3D13" parent="." index="33" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.12202 )
+
+[node name="Ball3D36" parent="." index="34" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 17.4134, -10.1477 )
+
+[node name="Ball3D17" parent="." index="35" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.13894 )
+
+[node name="Ball3D33" parent="." index="36" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 19.4304, -10.1477 )
+
+[node name="Ball3D7" parent="." index="37" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.07435 )
+
+[node name="Ball3D28" parent="." index="38" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 5.21708, -10.1477 )
+
+[node name="Ball3D45" parent="." index="39" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 26.7256, -10.1477 )
+
+[node name="Ball3D15" parent="." index="40" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0609 )
+
+[node name="Ball3D42" parent="." index="41" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 13.3523, -10.1477 )
+
+[node name="Ball3D4" parent="." index="42" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.03417 )
+
+[node name="Ball3D27" parent="." index="43" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 7.25726, -10.1477 )
+
+[node name="Ball3D46" parent="." index="44" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 28.7658, -10.1477 )
+
+[node name="Ball3D47" parent="." index="45" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 29.7804, -10.1477 )
+
+[node name="Ball3D14" parent="." index="46" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.10108 )
+
+[node name="Ball3D31" parent="." index="47" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 15.3925, -10.1477 )
+
+[node name="Ball3D8" parent="." index="48" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.09528 )
+
+[node name="Ball3D38" parent="." index="49" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 3.19615, -10.1477 )
+
+[node name="Ball3D55" parent="." index="50" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0205212, 24.7047, -10.1477 )
+
+[node name="Ball3D20" parent="." index="51" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0162958, -0.00473499, 9.17659 )
+
+[node name="Ball3D35" parent="." index="52" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0162958, 1.11484, -10.1524 )
+
+[node name="Ball3D54" parent="." index="53" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.00422537, 22.6234, -10.1525 )
+
+[node name="Ball3D21" parent="." index="54" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0162958, -0.00473499, 10.2377 )
+
+[node name="Ball3D37" parent="." index="55" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0162958, 0.0536833, -10.1524 )
+
+[node name="Ball3D57" parent="." index="56" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.00422537, 21.5622, -10.1525 )
+
+[node name="Ball3D16" parent="." index="57" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.03997 )
+
+[node name="Ball3D32" parent="." index="58" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 11.3314, -10.1477 )
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="59"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24.1431, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 3 )
+skeleton = NodePath("..")
+material/0 = ExtResource( 3 )
+_sections_unfolded = [ "material" ]
+
+

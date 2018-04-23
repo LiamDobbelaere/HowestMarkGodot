@@ -3,6 +3,8 @@
 [ext_resource path="res://assets/models/sphere_standard.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://assets/materials/ball.tres" type="Material" id=2]
 
+
+
 [node name="MeshInstance" type="MeshInstance" index="0"]
 
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )

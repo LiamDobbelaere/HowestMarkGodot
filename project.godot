@@ -29,6 +29,8 @@ zoom_out=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":
 
 [physics]
 
+3d/physics_engine="Bullet"
+2d/thread_model=2
 common/enable_object_picking=false
 
 [rendering]
